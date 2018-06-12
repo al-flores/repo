@@ -2,11 +2,10 @@
 <html>
   <head>
     <title>Splurty</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
   <body>
     <header class="row">
@@ -30,7 +29,7 @@
       </div>
     </header>
 
-    <hr />
+    <hr /><%= javascript_include_tag :all, :cache => true %>
 
     <br class="clear" />
 
